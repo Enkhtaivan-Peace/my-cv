@@ -1,0 +1,650 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e9e9e9;
+  color: #111111;
+
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================================================
+   PAGE
+   ========================================================= */
+
+.cv-page {
+  min-height: 100vh;
+
+  padding: 50px 0 80px;
+}
+
+
+/* =========================================================
+   CV
+   ========================================================= */
+
+.cv-pdf {
+  width: 794px;
+  min-height: 1123px;
+
+  margin: 0 auto;
+
+  padding: 48px 52px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.12);
+}
+
+.cv-pdf-inner {
+  width: 100%;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.cv-header {
+  display: flex;
+  align-items: flex-start;
+
+  padding-bottom: 27px;
+
+  border-bottom: 2px solid #111111;
+}
+
+.cv-header-main {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.cv-eyebrow {
+  margin: 0 0 14px;
+
+  color: #777777;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 7px;
+  line-height: 1.4;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+.cv-name {
+  margin: 0;
+
+  color: #111111;
+
+  font-size: 40px;
+  font-weight: 700;
+
+  line-height: 0.95;
+
+  letter-spacing: -0.055em;
+}
+
+.cv-primary-role {
+  margin: 13px 0 0;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+.cv-secondary-role {
+  margin: 3px 0 0;
+
+  color: #666666;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+.cv-contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 6px 18px;
+
+  margin-top: 19px;
+
+  color: #666666;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 6px;
+
+  line-height: 1.5;
+}
+
+.cv-profile {
+  flex: 0 0 112px;
+
+  width: 112px;
+  height: 136px;
+
+  margin-left: 30px;
+
+  overflow: hidden;
+
+  background: #eeeeee;
+}
+
+.cv-profile img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+}
+
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.cv-section {
+  padding-top: 25px;
+}
+
+.cv-section-heading {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.cv-section-heading span {
+  flex: 0 0 auto;
+
+  margin-right: 9px;
+
+  color: #999999;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 6px;
+}
+
+.cv-section-heading h2 {
+  margin: 0;
+
+  color: #111111;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 7px;
+  font-weight: 500;
+
+  line-height: 1.4;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+.cv-section-heading::after {
+  content: "";
+
+  flex: 1;
+
+  height: 1px;
+
+  margin-left: 14px;
+
+  background: #dcdcdc;
+}
+
+
+/* =========================================================
+   SUMMARY
+   ========================================================= */
+
+.cv-summary {
+  margin: 0;
+
+  color: #333333;
+
+  font-size: 8px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.cv-experience {
+  display: flex;
+
+  padding: 12px 0;
+
+  border-top: 1px solid #e3e3e3;
+}
+
+.cv-experience:first-of-type {
+  padding-top: 0;
+
+  border-top: 0;
+}
+
+.cv-experience-meta {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 0 92px;
+
+  padding-right: 18px;
+}
+
+.cv-experience-year {
+  color: #777777;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 6.5px;
+
+  line-height: 1.5;
+}
+
+.cv-experience-index {
+  margin-top: 9px;
+
+  color: #bbbbbb;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 6px;
+}
+
+.cv-experience-content {
+  flex: 1;
+
+  min-width: 0;
+}
+
+.cv-experience-content h3 {
+  margin: 0;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.cv-role {
+  margin: 3px 0 0;
+
+  color: #555555;
+
+  font-size: 7.5px;
+  font-weight: 500;
+
+  line-height: 1.4;
+}
+
+.cv-description {
+  margin: 5px 0 0;
+
+  color: #707070;
+
+  font-size: 6.8px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TECHNOLOGY
+   ========================================================= */
+
+.cv-tech-row {
+  display: flex;
+
+  padding: 7px 0;
+
+  border-top: 1px solid #e4e4e4;
+}
+
+.cv-tech-row:first-of-type {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.cv-tech-label {
+  flex: 0 0 112px;
+
+  padding-right: 18px;
+
+  color: #777777;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 6px;
+  font-weight: 500;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+.cv-tech-content {
+  flex: 1;
+
+  min-width: 0;
+
+  color: #292929;
+
+  font-size: 6.8px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROJECTS
+   ========================================================= */
+
+.cv-projects {
+  display: flex;
+
+  gap: 9px;
+}
+
+.cv-project {
+  flex: 1;
+
+  min-width: 0;
+
+  min-height: 126px;
+
+  padding: 13px;
+
+  border: 1px solid #dddddd;
+
+  background: #fafafa;
+}
+
+.cv-project-top {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  color: #999999;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 5.7px;
+}
+
+.cv-project h3 {
+  margin: 0;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.cv-project p {
+  margin: 6px 0 0;
+
+  color: #666666;
+
+  font-size: 6.4px;
+
+  line-height: 1.55;
+}
+
+.cv-project-tech {
+  margin-top: 9px;
+
+  color: #888888;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 5.4px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.cv-footer {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 25px;
+  padding-top: 11px;
+
+  border-top: 1px solid #111111;
+
+  color: #888888;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: 5.5px;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   TOOLBAR
+   ========================================================= */
+
+.cv-toolbar {
+  position: fixed;
+
+  left: 50%;
+  bottom: 22px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 7px;
+
+  background: #111111;
+
+  border-radius: 999px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.cv-back,
+.cv-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 34px;
+
+  padding: 0 16px;
+
+  border: 0;
+
+  border-radius: 999px;
+
+  font-family: "Inter", Arial, sans-serif;
+
+  font-size: 10px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.cv-back {
+  color: #ffffff;
+
+  background: transparent;
+}
+
+.cv-download {
+  color: #111111;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   PRINT
+   ========================================================= */
+
+@media print {
+
+  html,
+  body {
+    width: 210mm;
+
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+  }
+
+  .cv-page {
+    min-height: auto;
+
+    padding: 0;
+  }
+
+  .cv-pdf {
+    width: 210mm;
+    min-height: 297mm;
+
+    margin: 0;
+
+    padding: 12.7mm 13.7mm;
+
+    box-shadow: none;
+  }
+
+  .cv-toolbar {
+    display: none;
+  }
+
+  .cv-section,
+  .cv-experience,
+  .cv-tech-row,
+  .cv-project {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+
+/* =========================================================
+   SMALL SCREEN
+   ========================================================= */
+
+@media screen and (max-width: 850px) {
+
+  .cv-page {
+    padding: 20px 10px 90px;
+  }
+
+  .cv-pdf {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 30px 25px;
+  }
+
+  .cv-header {
+    gap: 20px;
+  }
+
+  .cv-header-main {
+    min-width: 0;
+  }
+
+  .cv-profile {
+    flex: 0 0 90px;
+
+    width: 90px;
+    height: 110px;
+
+    margin-left: 0;
+  }
+
+  .cv-name {
+    font-size: 30px;
+  }
+
+  .cv-projects {
+    flex-direction: column;
+  }
+
+  .cv-toolbar {
+    bottom: 12px;
+
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media print {
+  .cv-toolbar {
+    display: none !important;
+  }
+
+  body {
+    margin: 0;
+    background: #ffffff;
+  }
+
+  .cv-page {
+    padding: 0;
+  }
+
+  .cv-pdf {
+    width: 210mm;
+    min-height: 297mm;
+
+    margin: 0;
+    padding: 12.7mm 13.7mm;
+
+    box-shadow: none;
+  }
+}
