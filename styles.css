@@ -33,7 +33,32 @@ button { font: inherit; }
 .hero::after { content: ""; position: absolute; inset: 0; opacity: .13; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(90deg, #000, transparent 85%); }
 .hero-glow { position: absolute; width: 450px; height: 450px; right: -120px; top: -260px; border-radius: 50%; background: rgba(87,122,255,.19); filter: blur(5px); }
 .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 150px minmax(0, 1fr) 220px; align-items: center; gap: 34px; padding-block: 44px 42px; }
-.avatar { display: grid; place-items: center; width: 140px; height: 140px; border-radius: 50%; color: #fff; font-size: 38px; font-weight: 800; letter-spacing: -3px; background: linear-gradient(145deg, #7193ff, #3453a8); border: 5px solid rgba(255,255,255,.15); box-shadow: 0 0 0 1px rgba(255,255,255,.12), 0 18px 38px rgba(0,0,0,.2); }
+.avatar {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+  background: #e8edf5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.avatar-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .eyebrow { margin: 0 0 5px; color: #7d9bff; font-size: 9px; font-weight: 800; letter-spacing: 1.8px; line-height: 1.5; }
 .hero h1 { margin: 0; font-size: clamp(28px, 3.2vw, 39px); letter-spacing: -1.2px; line-height: 1.2; font-weight: 800; }
 .hero-role { margin: 8px 0 19px; color: #c4d5f8; font-size: 15px; font-weight: 600; }
