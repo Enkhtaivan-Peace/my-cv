@@ -1,966 +1,217 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Phill Anderson — Solution Architect</title>
-
-    <meta
-      name="description"
-      content="Phill Anderson — Solution Architect, Senior React Developer, Senior Full-Stack Software Engineer and QA Automation Engineer."
-    />
-
-    <meta name="author" content="Phill Anderson" />
-
-    <!-- =====================================================
-       GOOGLE FONTS
-  ====================================================== -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- =====================================================
-       CSS
-  ====================================================== -->
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- =====================================================
-       HEADER
-  ====================================================== -->
-
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#hero" class="logo"> PA<span>.</span> </a>
-
-        <nav class="main-nav">
-          <a href="#about"> About </a>
-
-          <a href="#experience"> Experience </a>
-
-          <a href="#stack"> Tech Stack </a>
-
-          <a href="#projects"> Projects </a>
-        </nav>
-
-        <!-- <button type="button" class="download-btn" id="downloadPdf">
-          <span> Download CV </span>
-
-          <span class="download-icon"> ↓ </span>
-        </button> -->
-        <a href="cv.html" class="header-action" data-download-cv> Print CV </a>
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Санжаажамц Энхтайван — Solution Architect, Senior Full-Stack Software Engineer">
+  <title>Санжаажамц Энхтайван | Professional CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Үндсэн цэс">
+      <a class="brand" href="#home">СЭ<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">Миний тухай</a>
+        <a href="#experience">Туршлага</a>
+        <a href="#skills">Технологи</a>
+        <a href="#education">Боловсрол</a>
+        <a href="#contact">Холбоо барих</a>
       </div>
-    </header>
+      <button class="button button-small" onclick="window.print()" aria-label="CV хэвлэх эсвэл PDF болгон хадгалах">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>
+        CV татах
+      </button>
+    </nav>
+  </header>
 
-    <!-- =====================================================
-       MAIN
-  ====================================================== -->
-
-    <main>
-      <!-- ===================================================
-         HERO
-    ==================================================== -->
-
-      <section class="hero" id="hero">
-        <div class="hero-grid">
-          <!-- HERO CONTENT -->
-
-          <div class="hero-content">
-            <div class="eyebrow hero-eyebrow">
-              <span class="eyebrow-line"></span>
-
-              SOLUTION ARCHITECT / SENIOR ENGINEER
-            </div>
-
-            <h1 class="hero-title">
-              Building
-
-              <span> scalable </span>
-
-              digital systems.
-            </h1>
-
-            <p class="hero-description">
-              Solution Architect and Senior Full-Stack Software Engineer
-              specializing in enterprise architecture, modern React engineering,
-              backend systems and quality automation.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#experience" class="primary-btn">
-                <span> View Experience </span>
-
-                <span> ↓ </span>
-              </a>
-
-              <a href="#stack" class="secondary-btn"> Tech Stack </a>
-            </div>
-          </div>
-
-          <!-- PROFILE -->
-
-          <div class="hero-profile">
-            <div class="profile-frame">
-              <div class="profile-image-wrap">
-                <!--
-                Example profile image.
-
-                Later replace this with:
-                assets/profile.jpg
-              -->
-
-                <img
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=85"
-                  alt="Phill Anderson"
-                  class="profile-image"
-                />
-              </div>
-
-              <div class="profile-number">
-                <span> 01 </span>
-
-                PROFILE
-              </div>
-            </div>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="container hero-content">
+        <div class="avatar" aria-label="Санжаажамц Энхтайваны нэрийн товчлол">СЭ</div>
+        <div class="hero-copy">
+          <p class="eyebrow">PROFESSIONAL PROFILE</p>
+          <h1>Санжаажамц Энхтайван</h1>
+          <p class="hero-role">Solution Architect <span>|</span> Senior Full-Stack Software Engineer</p>
+          <div class="contact-grid" id="contact">
+            <a href="tel:+97699950869"><span class="contact-icon">☎</span> 99950869</a>
+            <a href="tel:+97695081988"><span class="contact-icon">☎</span> 95081988</a>
+            <a href="mailto:mir18.enktaivan@gmail.com"><span class="contact-icon">✉</span> mir18.enktaivan@gmail.com</a>
+            <span><span class="contact-icon">⌖</span> Улаанбаатар хот, Баянгол дүүрэг</span>
+            <a href="https://www.facebook.com/profile.php?id=61583649934930" target="_blank" rel="noopener noreferrer"><span class="contact-icon">f</span> Facebook профайл</a>
           </div>
         </div>
-
-        <!-- HERO BOTTOM -->
-
-        <div class="hero-bottom">
-          <div class="hero-meta">
-            <div>
-              <span> 01 </span>
-
-              Architecture
-            </div>
-
-            <div>
-              <span> 02 </span>
-
-              React Engineering
-            </div>
-
-            <div>
-              <span> 03 </span>
-
-              Full-Stack
-            </div>
-
-            <div>
-              <span> 04 </span>
-
-              QA Automation
-            </div>
-          </div>
-
-          <div class="scroll-indicator">
-            SCROLL TO EXPLORE
-
-            <span> ↓ </span>
-          </div>
+        <div class="hero-aside">
+          <div class="aside-line"></div>
+          <p>“Зөв архитектур бол<br>ирээдүйн хөгжүүлэлтийн<br>суурь юм.”</p>
+          <span>ARCHITECTURE · ENGINEERING · DELIVERY</span>
         </div>
-      </section>
-
-      <!-- ===================================================
-         ABOUT
-    ==================================================== -->
-
-      <section class="section about-section" id="about">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-index">01 / ABOUT</div>
-
-            <h2>
-              Engineering
-
-              <span> systems </span>, not just software.
-            </h2>
-          </div>
-
-          <div class="about-grid">
-            <div class="about-label">PROFILE</div>
-
-            <div class="about-content">
-              <p class="large-text">
-                Solution Architect and Senior Full-Stack Software Engineer with
-                experience designing and developing enterprise-grade software
-                systems.
-              </p>
-
-              <p>
-                Strong specialization in React-based frontend engineering,
-                modern application architecture, backend development and
-                enterprise system design.
-              </p>
-
-              <p>
-                Experienced across the full software lifecycle — from system
-                architecture and domain modeling to implementation, integration
-                and automated testing.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================
-         EXPERIENCE
-    ==================================================== -->
-
-      <section class="section experience-section" id="experience">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-index">02 / EXPERIENCE</div>
-
-            <h2>
-              Career
-
-              <span> progression. </span>
-            </h2>
-          </div>
-
-          <!-- CAREER TIMELINE -->
-
-          <!-- =========================================================
-     CAREER PROGRESSION
-========================================================== -->
-
-          <section id="experience" class="career-section">
-            <div class="career-container">
-              <!-- SECTION INTRO -->
-
-              <div class="career-intro">
-                <div class="career-intro-meta">
-                  <span class="career-section-number"> 02 </span>
-
-                  <span class="career-intro-label"> CAREER PROGRESSION </span>
-                </div>
-
-                <div class="career-intro-content">
-                  <h2 class="career-title">
-                    From backend engineering
-                    <span>to solution architecture.</span>
-                  </h2>
-
-                  <p class="career-description">
-                    A progressive engineering journey shaped by backend
-                    development, frontend specialization, enterprise systems,
-                    and solution architecture.
-                  </p>
-                </div>
-              </div>
-
-              <!-- TIMELINE -->
-
-              <div class="career-timeline">
-                <!-- CENTRAL LINE -->
-
-                <div class="career-line">
-                  <div class="career-line-progress"></div>
-                </div>
-
-                <!-- =====================================================
-           2024 — 2026
-      ====================================================== -->
-
-                <article class="career-item career-item-right" data-career-item>
-                  <div class="career-point">
-                    <span class="career-point-dot"></span>
-                  </div>
-
-                  <div class="career-side career-side-left">
-                    <span class="career-period"> 2024 — 2026 </span>
-
-                    <span class="career-index"> 01 </span>
-                  </div>
-
-                  <div class="career-card-wrap">
-                    <div class="career-card">
-                      <div class="career-card-header">
-                        <div>
-                          <span class="career-company"> GOLOMT BANK </span>
-
-                          <h3 class="career-role">Solution Architect</h3>
-                        </div>
-
-                        <span class="career-card-arrow"> ↗ </span>
-                      </div>
-
-                      <div class="career-divider"></div>
-
-                      <p class="career-text">
-                        Designing enterprise application architecture and
-                        technical solutions across frontend, backend,
-                        integration, and distributed system components. Working
-                        with domain modeling, modular architecture, event-driven
-                        integration, and enterprise system design.
-                      </p>
-
-                      <div class="career-tech">
-                        <span>Architecture</span>
-                        <span>System Design</span>
-                        <span>DDD</span>
-                        <span>Event-Driven</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- =====================================================
-           2021 — 2024
-      ====================================================== -->
-
-                <article class="career-item career-item-left" data-career-item>
-                  <div class="career-point">
-                    <span class="career-point-dot"></span>
-                  </div>
-
-                  <div class="career-side career-side-right">
-                    <span class="career-period"> 2021 — 2024 </span>
-
-                    <span class="career-index"> 02 </span>
-                  </div>
-
-                  <div class="career-card-wrap">
-                    <div class="career-card">
-                      <div class="career-card-header">
-                        <div>
-                          <span class="career-company"> IT WIZARD </span>
-
-                          <h3 class="career-role">React Developer</h3>
-                        </div>
-
-                        <span class="career-card-arrow"> ↗ </span>
-                      </div>
-
-                      <div class="career-divider"></div>
-
-                      <p class="career-text">
-                        Developed modern React-based enterprise applications
-                        using component-driven architecture, state management,
-                        API integration, reusable UI systems, and scalable
-                        frontend engineering practices.
-                      </p>
-
-                      <div class="career-tech">
-                        <span>React</span>
-                        <span>TypeScript</span>
-                        <span>Vite</span>
-                        <span>State Management</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- =====================================================
-           2018 — 2021
-      ====================================================== -->
-
-                <article class="career-item career-item-right" data-career-item>
-                  <div class="career-point">
-                    <span class="career-point-dot"></span>
-                  </div>
-
-                  <div class="career-side career-side-left">
-                    <span class="career-period"> 2018 — 2021 </span>
-
-                    <span class="career-index"> 03 </span>
-                  </div>
-
-                  <div class="career-card-wrap">
-                    <div class="career-card">
-                      <div class="career-card-header">
-                        <div>
-                          <span class="career-company"> BID SOLUTION </span>
-
-                          <h3 class="career-role">Backend Developer</h3>
-                        </div>
-
-                        <span class="career-card-arrow"> ↗ </span>
-                      </div>
-
-                      <div class="career-divider"></div>
-
-                      <p class="career-text">
-                        Developed backend systems, REST APIs, database
-                        solutions, and business logic using Java and Node.js
-                        technologies with a focus on reliable enterprise
-                        application development.
-                      </p>
-
-                      <div class="career-tech">
-                        <span>Java</span>
-                        <span>Node.js</span>
-                        <span>REST API</span>
-                        <span>SQL</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-
-              <!-- CAREER END -->
-
-              <div class="career-end">
-                <span class="career-end-line"></span>
-
-                <span class="career-end-label"> CONTINUING TO BUILD </span>
-              </div>
-            </div>
-          </section>
-
-          <!-- EXPERIENCE LIST -->
-
-          <div class="experience-list">
-            <!-- GOLOMT BANK -->
-
-            <article class="experience-item">
-              <div class="experience-date">
-                <span> 2024 </span>
-
-                — 2026
-              </div>
-
-              <div class="experience-company">GOLOMT BANK</div>
-
-              <div class="experience-info">
-                <h3>Solution Architect</h3>
-
-                <p>
-                  Designed and guided enterprise software architecture,
-                  translating business requirements into scalable technical
-                  solutions.
-                </p>
-
-                <div class="focus">
-                  <span> Solution Architecture </span>
-
-                  <span> DDD </span>
-
-                  <span> Clean Architecture </span>
-
-                  <span> System Design </span>
-
-                  <span> Distributed Systems </span>
-
-                  <span> Event-Driven Architecture </span>
-
-                  <span> Apache Kafka </span>
-                </div>
-              </div>
-            </article>
-
-            <!-- IT WIZARD -->
-
-            <article class="experience-item">
-              <div class="experience-date">
-                <span> 2021 </span>
-
-                — 2024
-              </div>
-
-              <div class="experience-company">IT WIZARD</div>
-
-              <div class="experience-info">
-                <h3>React Developer</h3>
-
-                <p>
-                  Developed scalable web applications with a strong focus on
-                  React architecture, reusable components, state management and
-                  modern frontend engineering.
-                </p>
-
-                <div class="focus">
-                  <span> React </span>
-
-                  <span> React 19 </span>
-
-                  <span> Next.js </span>
-
-                  <span> TypeScript </span>
-
-                  <span> JavaScript </span>
-
-                  <span> Vite </span>
-
-                  <span> Zustand </span>
-
-                  <span> Redux Toolkit </span>
-
-                  <span> RTK Query </span>
-
-                  <span> Ant Design </span>
-
-                  <span> MUI </span>
-
-                  <span> Tailwind CSS </span>
-                </div>
-              </div>
-            </article>
-
-            <!-- BID SOLUTION -->
-
-            <article class="experience-item">
-              <div class="experience-date">
-                <span> 2018 </span>
-
-                — 2021
-              </div>
-
-              <div class="experience-company">BID SOLUTION</div>
-
-              <div class="experience-info">
-                <h3>Backend Developer</h3>
-
-                <p>
-                  Developed backend services and business applications, working
-                  across API development, business logic, database integration
-                  and enterprise systems.
-                </p>
-
-                <div class="focus">
-                  <span> Node.js </span>
-
-                  <span> Java </span>
-
-                  <span> Spring Boot </span>
-
-                  <span> REST API </span>
-
-                  <span> SQL </span>
-
-                  <span> PostgreSQL </span>
-
-                  <span> MySQL </span>
-
-                  <span> Oracle </span>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================
-         EXPERTISE
-    ==================================================== -->
-
-      <section class="section expertise-section">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-index">03 / EXPERTISE</div>
-
-            <h2>
-              Core
-
-              <span> capabilities. </span>
-            </h2>
-          </div>
-
-          <div class="expertise-grid">
-            <!-- CARD 01 -->
-
-            <article class="expertise-card">
-              <span class="card-number"> 01 </span>
-
-              <h3>
-                Solution
-                <br />
-                Architecture
-              </h3>
-
-              <p>
-                Enterprise architecture, system design, domain modeling and
-                distributed systems.
-              </p>
-            </article>
-
-            <!-- CARD 02 -->
-
-            <article class="expertise-card">
-              <span class="card-number"> 02 </span>
-
-              <h3>
-                Senior React
-                <br />
-                Engineering
-              </h3>
-
-              <p>
-                Modern React applications, frontend architecture, reusable
-                components and state management.
-              </p>
-            </article>
-
-            <!-- CARD 03 -->
-
-            <article class="expertise-card">
-              <span class="card-number"> 03 </span>
-
-              <h3>
-                Full-Stack
-                <br />
-                Engineering
-              </h3>
-
-              <p>
-                Backend services, APIs, databases, integration and enterprise
-                business systems.
-              </p>
-            </article>
-
-            <!-- CARD 04 -->
-
-            <article class="expertise-card">
-              <span class="card-number"> 04 </span>
-
-              <h3>
-                QA
-                <br />
-                Automation
-              </h3>
-
-              <p>
-                E2E, UI and regression automation using Python, Selenium,
-                Playwright and Pytest.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================
-         TECH STACK
-    ==================================================== -->
-
-      <section class="section stack-section" id="stack">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-index">04 / TECHNOLOGY</div>
-
-            <h2>
-              Technology
-
-              <span> stack. </span>
-            </h2>
-          </div>
-
-          <div class="stack-list">
-            <!-- ARCHITECTURE -->
-
-            <div class="stack-row">
-              <div class="stack-category">Architecture</div>
-
-              <div class="stack-items">
-                <span> DDD </span>
-
-                <span> Clean Architecture </span>
-
-                <span> SOLID </span>
-
-                <span> System Design </span>
-
-                <span> Microservices </span>
-
-                <span> Distributed Systems </span>
-
-                <span> Event-Driven Architecture </span>
-              </div>
-            </div>
-
-            <!-- FRONTEND -->
-
-            <div class="stack-row">
-              <div class="stack-category">
-                Frontend
-
-                <small> Senior React </small>
-              </div>
-
-              <div class="stack-items">
-                <span> React </span>
-
-                <span> React 19 </span>
-
-                <span> Next.js </span>
-
-                <span> TypeScript </span>
-
-                <span> JavaScript </span>
-
-                <span> Vite </span>
-
-                <span> Zustand </span>
-
-                <span> Redux Toolkit </span>
-
-                <span> RTK Query </span>
-
-                <span> TanStack Query </span>
-
-                <span> Ant Design </span>
-
-                <span> MUI </span>
-
-                <span> Mantine </span>
-
-                <span> Tailwind CSS </span>
-              </div>
-            </div>
-
-            <!-- BACKEND -->
-
-            <div class="stack-row">
-              <div class="stack-category">Backend</div>
-
-              <div class="stack-items">
-                <span> Node.js </span>
-
-                <span> NestJS </span>
-
-                <span> Python </span>
-
-                <span> FastAPI </span>
-
-                <span> Java </span>
-
-                <span> Spring Boot </span>
-              </div>
-            </div>
-
-            <!-- DATABASE -->
-
-            <div class="stack-row">
-              <div class="stack-category">
-                Database
-
-                <small> & ORM </small>
-              </div>
-
-              <div class="stack-items">
-                <span> PostgreSQL </span>
-
-                <span> MySQL </span>
-
-                <span> MSSQL </span>
-
-                <span> Oracle </span>
-
-                <span> MongoDB </span>
-
-                <span> TypeORM </span>
-
-                <span> Prisma </span>
-
-                <span> Hibernate / JPA </span>
-              </div>
-            </div>
-
-            <!-- MESSAGING -->
-
-            <div class="stack-row">
-              <div class="stack-category">
-                Messaging
-
-                <small> & Integration </small>
-              </div>
-
-              <div class="stack-items">
-                <span> Apache Kafka </span>
-
-                <span> REST API </span>
-
-                <span> Event Integration </span>
-
-                <span> Async Processing </span>
-              </div>
-            </div>
-
-            <!-- QA -->
-
-            <div class="stack-row">
-              <div class="stack-category">
-                QA
-
-                <small> Automation </small>
-              </div>
-
-              <div class="stack-items">
-                <span> Python </span>
-
-                <span> Selenium </span>
-
-                <span> Playwright </span>
-
-                <span> Pytest </span>
-
-                <span> E2E Testing </span>
-
-                <span> UI Automation </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================
-         PROJECTS
-    ==================================================== -->
-
-      <section class="section projects-section" id="projects">
-        <div class="container">
-          <div class="section-heading">
-            <div class="section-index">05 / PROJECTS</div>
-
-            <h2>
-              Selected
-
-              <span> work. </span>
-            </h2>
-          </div>
-
-          <div class="projects-grid">
-            <!-- PEACE ERP -->
-
-            <article class="project-card">
-              <div class="project-top">
-                <span> 01 </span>
-
-                ENTERPRISE ERP
-              </div>
-
-              <h3>Peace ERP</h3>
-
-              <p>
-                Enterprise ERP platform covering HR, organization, workflow,
-                reporting, audit and business operations.
-              </p>
-
-              <div class="project-stack">
-                React · Vite · NestJS · PostgreSQL
-              </div>
-            </article>
-
-            <!-- TMS -->
-
-            <article class="project-card">
-              <div class="project-top">
-                <span> 02 </span>
-
-                TASK MANAGEMENT
-              </div>
-
-              <h3>Task Management System</h3>
-
-              <p>
-                Enterprise TMS with workflow, assignment, review, SLA, activity
-                and timeline management.
-              </p>
-
-              <div class="project-stack">
-                NestJS · TypeORM · MySQL · Workflow
-              </div>
-            </article>
-
-            <!-- QA -->
-
-            <article class="project-card">
-              <div class="project-top">
-                <span> 03 </span>
-
-                AUTOMATION
-              </div>
-
-              <h3>QA Automation</h3>
-
-              <p>
-                E2E, UI and regression automation solutions for enterprise web
-                applications.
-              </p>
-
-              <div class="project-stack">
-                Python · Selenium · Playwright · Pytest
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- ===================================================
-         CONTACT
-    ==================================================== -->
-
-      <section class="contact-section">
-        <div class="container">
-          <div class="contact-inner">
-            <div class="section-index">06 / CONTACT</div>
-
-            <h2>
-              Let's build
-
-              <span> something meaningful. </span>
-            </h2>
-
-            <p>
-              Open to challenging enterprise architecture, software engineering
-              and technical leadership opportunities.
-            </p>
-
-            <a href="mailto:your@email.com" class="contact-btn">
-              Get in touch
-
-              <span> ↗ </span>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- =====================================================
-       FOOTER
-  ====================================================== -->
-
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>© 2026 Phill Anderson</div>
-
-        <div>Solution Architect · Senior React Developer</div>
       </div>
-    </footer>
+      <div class="hero-bottom-line"></div>
+    </section>
 
-    <!-- =====================================================
-       GSAP
-  ====================================================== -->
+    <div class="container page-content">
+      <section class="top-grid">
+        <article class="card about-card" id="about">
+          <div class="section-heading">
+            <span class="heading-icon">✦</span>
+            <div><p class="eyebrow">PROFILE</p><h2>Миний тухай</h2></div>
+          </div>
+          <p>Программ хангамжийн хөгжүүлэлтийн чиглэлээр 7 гаруй жилийн мэргэжлийн туршлагатай, Solution Architecture, системийн шинжилгээ болон Full-Stack хөгжүүлэлтээр мэргэшсэн инженер. Голомт Банканд Solution Architect, ItWizard компанид Senior React Developer, BID SOLUTION компанид Backend Developer-ээр ажилласан.</p>
+          <p>Бизнесийн шаардлагыг техникийн шийдэл болгон боловсруулах, enterprise системийн архитектур төлөвлөх, хөгжүүлэлтийн стандарт бий болгох, багийн гишүүдийг мэргэжлийн түвшинд чиглүүлэх чиглэлээр ажиллаж ирсэн.</p>
+          <p>Модульчлагдсан архитектур, Domain-Driven Design (DDD), Microservices, Event-Driven Architecture зэрэг зарчмуудыг ашиглан өргөтгөх боломжтой, найдвартай, засвар үйлчилгээ хийхэд хялбар систем бүтээхэд төвлөрдөг. AI-д суурилсан хөгжүүлэлт болон автоматжуулалтын боломжийг бодит хэрэглээнд нэвтрүүлэх сонирхолтой.</p>
+          <div class="profile-tags"><span>System Design</span><span>Technical Leadership</span><span>AI & Automation</span></div>
+        </article>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <article class="card strengths-card">
+          <div class="section-heading">
+            <span class="heading-icon">✧</span>
+            <div><p class="eyebrow">WHAT I BRING</p><h2>Гол ур чадвар</h2></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon blue">◇</div>
+            <div><h3>Solution & Software Architecture</h3><p>Enterprise архитектур, системийн шинжилгээ, DDD, Microservices, Event-Driven Architecture, SOLID.</p></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon violet">&lt;/&gt;</div>
+            <div><h3>Full-Stack Engineering</h3><p>Backend болон frontend хөгжүүлэлт, REST API, системийн интеграци, дахин ашиглах боломжтой компонент.</p></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon green">♧</div>
+            <div><h3>Technical Leadership</h3><p>Хөгжүүлэлтийн стандарт, кодын чанар, багийн чиглүүлэлт, junior хөгжүүлэгчдийн менторшип.</p></div>
+          </div>
+          <div class="strength-item">
+            <div class="strength-icon orange">AI</div>
+            <div><h3>AI & Automation Engineering</h3><p>Claude Code, Agentic AI, тестийн автоматжуулалт, бизнес процессын автоматжуулалт.</p></div>
+          </div>
+        </article>
+      </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+      <section class="card experience-card" id="experience">
+        <div class="section-heading section-heading-row">
+          <div class="heading-left"><span class="heading-icon">▣</span><div><p class="eyebrow">CAREER JOURNEY</p><h2>Ажлын туршлага</h2></div></div>
+          <span class="experience-total">7+ жилийн туршлага</span>
+        </div>
+        <div class="timeline">
+          <article class="job">
+            <div class="timeline-marker"></div>
+            <div class="job-main">
+              <div class="company-mark golomt">G</div>
+              <div><h3>Голомт Банк</h3><p class="job-title">Solution Architect</p><p class="job-date">2024.11 – 2026.07 <span>·</span> 1 жил 8 сар</p>
+                <p class="job-summary">Банкны дотоод үйл ажиллагаанд ашиглагдах системүүдийн шийдлийн архитектур болон системийн шинжилгээний чиглэлээр ажилласан.</p></div>
+            </div>
+            <div class="job-details"><h4>Үндсэн үүрэг, хариуцлага</h4><ul><li>Шийдлийн архитектур боловсруулах</li><li>Технологийн судалгаа, системийн шинжилгээ хийх</li><li>Кодын стандарт боловсруулах, хэрэгжилтэд хяналт тавих</li><li>Онц чухал хэсгүүдийн хөгжүүлэлт хийх</li><li>Junior хөгжүүлэгчдийг чиглүүлэх</li><li>Карт хүргэлтийн системийг хариуцан ажиллах</li></ul></div>
+          </article>
+          <article class="job">
+            <div class="timeline-marker"></div>
+            <div class="job-main">
+              <div class="company-mark itwizard">W</div>
+              <div><h3>ItWizard</h3><p class="job-title">Senior React Developer</p><p class="job-date">2021.02 – 2024.11 <span>·</span> 3 жил 9 сар</p>
+                <p class="job-summary">React болон Next.js төслүүдийн frontend архитектур, хөгжүүлэлтийн стандарт, дахин ашиглах боломжтой кодын суурийг боловсруулсан.</p></div>
+            </div>
+            <div class="job-details"><h4>Үндсэн үүрэг, хариуцлага</h4><ul><li>Frontend архитектур, кодын бүтэц боловсруулах</li><li>Багийн стандарт, boilerplate/codebase бий болгох</li><li>Өргөтгөх боломжтой архитектур хэрэгжүүлэх</li><li>Documentation боловсруулах</li><li>UI/UX шийдэл гаргах</li><li>Junior хөгжүүлэгчдийг сургаж чиглүүлэх</li></ul></div>
+          </article>
+          <article class="job">
+            <div class="timeline-marker"></div>
+            <div class="job-main">
+              <div class="company-mark bid">BID</div>
+              <div><h3>BID SOLUTION</h3><p class="job-title">Backend Developer</p><p class="job-date">2018.01 – 2020.01 <span>·</span> 2 жил</p>
+                <p class="job-summary">Хүмүүнлэгийн Ухааны Их Сургуулийн веб системийн хэвийн ажиллагаа, нэмэлт хөгжүүлэлт болон сайжруулалтыг хариуцсан.</p>
+                <a class="inline-link" href="https://www.humanities.edu.mn/" target="_blank" rel="noopener noreferrer">humanities.edu.mn ↗</a></div>
+            </div>
+            <div class="job-details"><h4>Үндсэн үүрэг, хариуцлага</h4><ul><li>Backend хөгжүүлэлт, засвар үйлчилгээ</li><li>C#, ASP.NET, jQuery, Java Spring Boot ашиглах</li><li>Системийн асуудлыг шинжилж шийдвэрлэх</li><li>3 хүний бүрэлдэхүүнтэй баг удирдах</li></ul></div>
+          </article>
+        </div>
+      </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+      <section class="bottom-grid">
+        <article class="card skills-card" id="skills">
+          <div class="section-heading">
+            <span class="heading-icon">⌘</span>
+            <div><p class="eyebrow">TECH STACK</p><h2>Техникийн ур чадвар</h2></div>
+          </div>
+          <div class="skill-columns">
+            <div class="skill-column">
+              <div class="skill-group"><h3>Хэлнүүд</h3><p>JavaScript / TypeScript, Java, SQL, Python, PHP, C#</p></div>
+              <div class="skill-group"><h3>Backend</h3><p>Node.js, NestJS, Spring Boot, FastAPI, ASP.NET</p></div>
+              <div class="skill-group"><h3>Frontend</h3><p>React, Next.js, Vite, Vue.js, jQuery, Material UI, Mantine UI, Tailwind CSS</p></div>
+              <div class="skill-group"><h3>Database</h3><p>MySQL, PostgreSQL, MSSQL, Oracle</p></div>
+            </div>
+            <div class="skill-column">
+              <div class="skill-group"><h3>Architecture</h3><p>SOLID, Modular Monolith, Microservices, DDD, Event-Driven Architecture</p></div>
+              <div class="skill-group"><h3>Monorepo & Integration</h3><p>Nx, pnpm, REST API, Kafka, Event-Driven Integration</p></div>
+              <div class="skill-group"><h3>Infrastructure & DevOps</h3><p>Docker, Docker Compose, Nginx, Linux, CI/CD</p></div>
+              <div class="skill-group"><h3>QA & Automation</h3><p>Selenium, Playwright, Unit Testing, E2E Testing, Test Automation</p></div>
+              <div class="skill-group"><h3>AI</h3><p>Claude Code, Agentic AI, AI-assisted Development</p></div>
+            </div>
+          </div>
+        </article>
 
-    <!-- =====================================================
-       PDF LIBRARIES
-  ====================================================== -->
+        <div class="middle-stack">
+          <article class="card compact-card" id="education">
+            <div class="section-heading">
+              <span class="heading-icon">◇</span>
+              <div><p class="eyebrow">EDUCATION</p><h2>Боловсрол</h2></div>
+            </div>
+            <h3>Монгол Улсын Их Сургууль</h3>
+            <p>Мэдээллийн систем</p>
+            <div class="muted-line">2009 – 2013 <span>·</span> Бакалавр</div>
+          </article>
+          <article class="card compact-card">
+            <div class="section-heading">
+              <span class="heading-icon">◎</span>
+              <div><p class="eyebrow">LANGUAGE</p><h2>Гадаад хэл</h2></div>
+            </div>
+            <h3>Англи хэл</h3><p>Ахисан шат</p>
+          </article>
+          <article class="card compact-card">
+            <div class="section-heading">
+              <span class="heading-icon">▣</span>
+              <div><p class="eyebrow">ADDITIONAL</p><h2>Нэмэлт мэдээлэл</h2></div>
+            </div>
+            <h3>Жолооны үнэмлэх</h3><p>B, C ангилал</p>
+            <div class="muted-line">Бүтэн цагийн ажил</div>
+          </article>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        <div class="right-stack">
+          <article class="card compact-card">
+            <div class="section-heading">
+              <span class="heading-icon">✧</span>
+              <div><p class="eyebrow">SOFT SKILLS</p><h2>Хувийн ур чадвар</h2></div>
+            </div>
+            <ul class="clean-list">
+              <li>Тогтмол суралцах, дасан зохицох</li>
+              <li>Аналитик сэтгэлгээ, шийдвэр гаргалт</li>
+              <li>Цагийн менежмент, хариуцлага</li>
+              <li>Харилцаа ба багаар ажиллах</li>
+              <li>Манлайлал, менторшип</li>
+              <li>Хувийн сахилга бат</li>
+            </ul>
+          </article>
+          <article class="card compact-card career-card">
+            <div class="section-heading">
+              <span class="heading-icon">↗</span>
+              <div><p class="eyebrow">CAREER INTERESTS</p><h2>Сонирхож буй чиглэл</h2></div>
+            </div>
+            <div class="career-tags"><span>Solution Architect</span><span>Software Architect</span><span>Senior Engineer</span><span>Technical Lead</span><span>AI & Automation</span></div>
+          </article>
+        </div>
+      </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+      <section class="contact-banner">
+        <div><p class="eyebrow">LET'S CONNECT</p><h2>Хамтдаа үнэ цэнтэй шийдэл бүтээе.</h2><p>Архитектур · Инженерчлэл · Автоматжуулалт</p></div>
+        <a class="button" href="mailto:mir18.enktaivan@gmail.com">Надтай холбогдох <span>↗</span></a>
+      </section>
+    </div>
+  </main>
 
-    <!-- =====================================================
-       APP JS
-  ====================================================== -->
-
-    <script src="script.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container footer-inner"><a class="brand footer-brand" href="#home">СЭ<span>.</span></a><p>Санжаажамц Энхтайван <span>·</span> Solution Architect / Senior Full-Stack Software Engineer</p><a href="#home">Дээш буцах ↑</a></div>
+  </footer>
+</body>
 </html>
